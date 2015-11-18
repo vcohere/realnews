@@ -1,0 +1,201 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ecf0f1;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:focus {
+	outline: none;
+}
+
+#container {
+	width: 100%;
+	height: auto;
+}
+
+#head {
+	width: 100%;
+	height: 90px;
+	position: relative;
+	padding-top: 20px;
+	text-align: center;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	background-color: #424B54;
+	z-index: 8;
+}
+
+#head p {
+	font-size: 2.5em;
+	font-weight: 400;
+}
+
+#menu {
+	width: 100%;
+	height: 47px;
+	list-style-type: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	background-color: #424B54;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.20);
+	font-weight: 300;
+	z-index: 9;
+}
+
+#menu li {
+	position: relative;
+	display: inline;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 17px;
+	flex-grow: 1;
+	border: 2px solid transparent;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+}
+
+#menu li.active::after
+{
+	display: block;
+	width: 80%;
+	height: 2px;
+	background-color: #FFFFFF;
+	content: " ";
+	position: absolute;
+	bottom: -2px;
+	margin-left: 10%;
+}
+
+#menu li:hover {
+	cursor: pointer;
+}
+
+#portamento_container #menu.fixed {
+	position: fixed;
+	top: 0;
+}
+
+#content .article {
+	width: 80%;
+	max-width: 900px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	border: 1px solid #bdc3c7;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+
+#content .img {
+	width: 100%;
+	height: 200px;
+	background-image: url('../img/article.jpg');
+	background-size: cover;
+	background-position: top center;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+#content .body {
+	padding: 15px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+#content .body .tag {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: -40px;
+	right: 5px;
+	font-size: 14px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 80px;
+	vertical-align: middle;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.26);
+	background-color: #F39C12;
+	color: white;
+	font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+#content .body .tag.society { background-color: #3498db; }
+#content .body .tag.politic { background-color: #e74c3c; }
+#content .body .tag.science { background-color: #9b59b6; }
+#content .body .tag.tech { background-color: #e67e22; }
+#content .body .tag.planet { background-color: #2ecc71; }
+
+#content .body .title {
+	font-size: 26px;
+}
+
+#content .actions {
+	width: 100%;
+	border-top: 1px solid #bdc3c7;
+	padding: 7px;
+
+}
+
+#content .actions .fa, #content .actions .more {
+	color: #242829;
+}
+
+#content .actions .fa {
+	float: left;
+	font-size: 18px;
+	line-height: 35px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+#content .actions .more {
+	float: right;
+	color: black;
+	text-transform: uppercase;
+	height: 35px;
+	line-height: 37px;
+	padding-left: 9px;
+	padding-right: 9px;
+	vertical-align: middle;
+	font-size: 14px;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-weight: 500;
+	margin-right: 10px;
+	border-radius: 2px;
+}
+
+#content .actions .more:hover {
+	cursor: pointer;
+	background-color: #C8CBCC;
+}
+
+#content .actions .more:active {
+	background-color: #B4B7B8;
+}
+
+#content .actions > .clear {
+	clear: both;
+}
+
+#footer {
+	height: 200px;
+	width: 100%;
+	background-color: #7f8c8d;
+	margin-top: 50px;
+}
