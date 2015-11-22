@@ -8,26 +8,28 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css' />
 	<link rel='stylesheet' href='css/style.css' />
+	<link rel='stylesheet' href='css/panel.css' />
+	<link rel='stylesheet' href='css/header.css' />
 </head>
 <body>
 	<div id='container'>
 		<div id='head'>
+			<span class='fa fa-bars'></span>
 			<p><a href='index.html'>Real News</a></p>
+			<input type='text' class='search' placeholder='&#xf002; Search'style="font-family:Roboto, FontAwesome" />
 		</div>
-		<ul id='menu'>
-			<li class='all active'>tout</li>
-			<li class='society'>entreprises</li>
-			<li class='politic'>politique</li>
-			<li class='science'>sciences</li>
-			<li class='tech'>high-tech</li>
-			<li class='planet'>planete</li>
-		</ul>
+		<div id='panel'>
+			<h1>Categories</h1>
+			<h2><i class='fa fa-globe fa-2x'></i><span>Planete</span></h2>
+			<h2><i class='fa fa-line-chart fa-2x'></i><span>Economie</span></h2>
+			<h2><i class='fa fa-flask fa-2x'></i><span>Sciences</span></h2>
+			<h2><i class='fa fa-balance-scale fa-2x'></i><span>Politique</span></h2>
+			<h2><i class='fa fa-laptop fa-2x'></i><span>High-Tech</span></h2>
+		</div>
 		<div id='content'>
 			<div class='article'>
-				<div class='img'></div>
+				<div class='img'><p class='title'>Un attentat meurtrier a Paris</p></div>
 				<div class='body'>
-					<span class='tag politic'>Politique</span>
-					<p class='title'>Un attentat meurtrier a Paris</p>
 					<p class='sum'>Un attentat a eu lieu dans la nuit du 13 Novembre a Paris.</p>
 				</div>
 				<div class='actions'>

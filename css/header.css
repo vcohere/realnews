@@ -1,0 +1,53 @@
+#head {
+	width: 100%;
+	height: 50px;
+	position: relative;
+	padding-top: 12.5px;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	background-color: #43a047;
+	z-index: 8;
+	box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+}
+
+#head p {
+	font-size: 20px;
+	font-weight: 400;
+	padding-left: 52px;
+}
+
+#head span {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	font-size: 25px;
+	color: white;
+}
+
+#head span:hover {
+	cursor: pointer;
+}
+
+#head .search {
+	display: inline;
+	position: absolute;
+	right: 10px;
+	top: 7.5px;
+	height: 35px;
+	width: 300px;
+	background-color: #66bb6a;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 7px;
+}
+
+#head .search::before {
+	content: '\f002';
+	font-family: 'FontAwesome';
+}
+
+#head .search:active {
+	outline: none;
+}

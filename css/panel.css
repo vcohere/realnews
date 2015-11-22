@@ -1,0 +1,63 @@
+#panel {
+	height: 100vh;
+	position: fixed;
+	top: 50px;
+	left: -220px;
+	width: 220px;
+	z-index: 7;
+	padding-top: 8px;
+}
+
+#panel.active {
+}
+
+#panel h1, h2 {
+	font-weight: normal;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	color: #9e9e9e;
+	font-size: 18px;
+}
+
+#panel h1 {
+	font-weight: normal;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 5%;
+}
+
+#panel h2 {
+	height: 50px;
+	width: 90%;
+	margin: auto;
+	line-height: 50px;
+	vertical-align: middle;
+	font-weight: 300;
+}
+
+#panel h2 .fa {
+	position: absolute;
+	width: 40px;
+	font-size: 24px;
+	text-align: center;
+	color: #616161;
+	line-height: 50px;
+}
+
+#panel h2 span {
+	padding-left: 45px;
+}
+
+#panel h2:hover {
+	background-color: #e0e0e0;
+	cursor: pointer;
+}
+
+#panel h2.active {
+	font-weight: 400;
+	color: black;
+	background-color: #e0e0e0;
+}
+
+#panel h2.active .fa {
+	color: black;
+}
